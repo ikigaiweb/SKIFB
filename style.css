@@ -1,0 +1,192 @@
+:root {
+    --primaryColor: #840104; /* Couleur principale */
+    --primaryColorHover:#9C1B06; /* Couleur principale quand la souris passe dessus */
+    --primaryColorClick: #9C0653 ;  /* Couleur principale quand on click dessus */
+    --primaryColorNuance: #912E06; /* Couleur principale nuancé */
+    --primaryColorFonce: #6B0103; /* Couleur principale + foncé */
+    --primaryColorClair: #910104; /* Couleur principale + clair  */
+    --primaryColorMonochome:#D10206; /* Couleur principale version monochrome */
+    --secondaryColor: #E6C619; /* Couleur secondaire */
+    
+    --tertiaryColor: #018525; /* Couleur tertiaire  */
+    --whiteTransparent02: rgba(255, 255, 255, 0.2); /* Blanc tres transparent */
+    --whiteTransparent06: rgba(255, 255, 255, 0.6); /* Blanc un peu transparent */
+    --grey03: rgba(0, 0, 0, 0.3); /* Gris clair transparent */
+    --grey05: rgba(0, 0, 0, 0.5); /* Gris transparent */
+    --grey07: rgba(0, 0, 0, 0.7); /* Gris foncé une pointe de transparence */
+    --grey09: rgba(0, 0, 0, 0.9); /* Noir avec une pointe de transparence */
+    --lightGreyColor: #f6f6f6;
+    --darkGreyColor: #eaeaea;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow-x: hidden;
+
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: unset;
+    text-align: center;
+  }
+  p, a , li, ul {
+    font-family: unset;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    
+    color: unset;
+  }
+    /*___________________SEMANTIQUES_____Début_____________ */
+    header, main, footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    background-color: unset;
+    display: flex;
+    justify-content: center;
+}
+main {
+    background-color: var(--lightGreyColor);
+  }
+  footer {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    padding: 10px;
+  }
+
+
+  /*___________________SEMANTIQUES_____fin_____________ */
+
+
+
+  /*___________________KEY FRAMES_____Début_____________ */
+
+
+  /*___________________KEY FRAMES_____fin_____________ */
+
+
+
+
+  /*___________________HEADER_____Début_____________ */
+  .header div {
+    display: flex;
+    justify-content: center;
+  }
+  .logoSkifB {
+    width: 153px;
+    height: 150px;
+    margin: 5px auto 5px auto;
+    display: block;
+  }
+  .drapeauBelge {
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(to right, black 0% 25%,yellow 30% 70%, red 75%);   
+    margin: 0 0 5px 0; 
+  }
+  .drapeauBelge p {
+    text-align: center;
+    font-size: 50px;
+    margin: 10px auto 10px auto;
+  }
+  /* ------ NAV-------*/
+  nav {
+    display: grid;
+    grid-column: 1/-1;
+     width: 100%;
+     text-align: center;
+     z-index: 3;
+     background-color: var(--primaryColor);
+     justify-content: center;
+   }
+   nav ul {
+     margin-block-start: 0em;
+     margin-block-end: 0em;
+     margin: 0;
+     padding: 0;
+   }
+   /* ---------------Menu----------------- */
+   .menu {
+     display: inline-block;
+   }
+   .menu > li {
+     float: left;
+     color: green;
+     width: 100%;
+     height: 50px;
+     line-height: 50px;
+     background: var(--primaryColor);
+     cursor: pointer;
+     font-size: 17px;
+   }
+   .menu > li:hover {
+     background-color: red;
+     height: 50px;
+   }
+   .menu a {
+     color: var(--secondaryColor);
+     font-size: 21px;
+     padding: 8px 0;
+     text-decoration: none;
+   }
+   .menu > li:hover .sub-menu li {
+     transform: scale(1);
+   }
+   .menu > li:hover .sub-menu {
+     transform: scale(1);
+   }
+   /* ---------Sub menu---------- */
+   .sub-menu {
+     transform: scale(0);
+     transform-origin: top center;
+     transition: all 300ms ease-in-out;
+   }
+   .sub-menu li {
+     font-size: 17px;
+     background-color: green;
+     background-image:linear-gradient(to bottom, red 0%, #840104 100%);
+     padding: 8px 0;
+     color: white;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     transform: scale(0);
+     transform-origin: top center;
+     transition: all 300ms ease-in-out;
+   }
+   .sub-menu li:last-child {
+     border-bottom: 0;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+   }
+   .sub-menu li:hover {
+     background: blue;
+     background-image:linear-gradient(to bottom, yellow 0%, black 100%);
+   }
+  /*___________________HEADER_____fin_____________ */
+
+
+
+  /*___________________MAIN_____Début_____________ */
+main section {
+    padding: 10px 5% 10px 5%;
+}
+
+  /*___________________MAIN_____fin_____________ */
+
+
+
+  /*___________________FOOTER_____Début_____________ */
+.skifBroderie {
+    float: right;
+    position: relative;
+    top: -220px;
+}
+
+   /*___________________FOOTER_____fin_____________ */
