@@ -59,7 +59,8 @@ main {
   footer {
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
-    padding: 10px;
+    padding: 20px;
+    height: 250px;
   }
 
 
@@ -183,10 +184,27 @@ main section {
 
 
   /*___________________FOOTER_____Début_____________ */
-.skifBroderie {
-    float: right;
-    position: relative;
-    top: -220px;
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
 }
-
+  .skifBroderie {
+    height: 150px;
+    max-width: 30%;
+}
+.icons {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.footer__liens {
+    width: 70%;
+}
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+footer ul li {
+    margin: 7px 0 7px 0;
+}
    /*___________________FOOTER_____fin_____________ */
