@@ -9,6 +9,7 @@
     --secondaryColor: #E6C619; /* Couleur secondaire */
     
     --tertiaryColor: #018525; /* Couleur tertiaire  */
+    --tertiaryColorNuance : #03CF3F; /* On reste dans du vert il a un bien meilleur ratio de visibilité 5/1  */ 
     --whiteTransparent02: rgba(255, 255, 255, 0.2); /* Blanc tres transparent */
     --whiteTransparent06: rgba(255, 255, 255, 0.6); /* Blanc un peu transparent */
     --grey03: rgba(0, 0, 0, 0.3); /* Gris clair transparent */
@@ -24,7 +25,7 @@
   body {
     margin: 0;
     padding: 0;
-    background: white;
+    background: var(--lightGreyColor);
     overflow-x: hidden;
 
   }
@@ -42,19 +43,22 @@
     color: unset;
   }
     /*___________________SEMANTIQUES_____Début_____________ */
-    header, main, footer {
+    header, footer {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 header {
-    background-color: unset;
+    background-color: white;
     display: flex;
     justify-content: center;
 }
 main {
     background-color: var(--lightGreyColor);
+    max-width: 90%;
+    width: 1000px;
+    margin: 0 auto 0 auto;
   }
   footer {
     background-color: var(--primaryColor);
@@ -87,16 +91,25 @@ main {
     margin: 5px auto 5px auto;
     display: block;
   }
-  .drapeauBelge {
-    display: flex;
-    flex-direction: column;
-    background-image:linear-gradient(to right, black 0% 25%,yellow 30% 70%, red 75%);   
-    margin: 0 0 5px 0; 
-  }
-  .drapeauBelge p {
+  .skifb {
     text-align: center;
+    justify-content: center;
     font-size: 50px;
     margin: 10px auto 10px auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .skifb p {
+    margin: 5px 0 5px 0;
+  }
+  .colorBlack {
+    color: black;
+  }
+  .colorGold {
+    color:#E6C619;
+  }
+  .colorRed {
+    color:red;
   }
   /* ------ NAV-------*/
   nav {
@@ -207,4 +220,10 @@ footer ul {
 footer ul li {
     margin: 7px 0 7px 0;
 }
+.fa-solid {
+  width: 16px;
+  height: 16px;
+}
+
+
    /*___________________FOOTER_____fin_____________ */
