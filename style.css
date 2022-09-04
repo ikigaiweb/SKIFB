@@ -5,6 +5,7 @@
     --primaryColorNuance: #912E06; /* Couleur principale nuancé */
     --primaryColorFonce: #6B0103; /* Couleur principale + foncé */
     --primaryColorClair: #910104; /* Couleur principale + clair  */
+
     --primaryColorMonochome:#D10206; /* Couleur principale version monochrome */
     --secondaryColor: #E6C619; /* Couleur secondaire */
     
@@ -166,7 +167,7 @@ main {
    .sub-menu li {
      font-size: 17px;
      background-color: green;
-     background-image:linear-gradient(to bottom, #910104 0%, #6B0103 100%);
+     background-image:linear-gradient(to bottom, #9C1B06 0%, #6B0103 100%);
      padding: 8px 0;
      color: white;
      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -200,6 +201,10 @@ main section {
 footer .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto 0 auto;
 }
 .broderieSociale {
   max-width: 45%;
@@ -235,6 +240,9 @@ footer ul li {
   width: 16px;
   height: 16px;
 }
-
+.logoSkifWorld {
+  display: none;
+ 
+}
 
    /*___________________FOOTER_____fin_____________ */
