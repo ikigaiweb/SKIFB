@@ -64,7 +64,7 @@ main {
   footer {
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
-    padding: 20px;
+    padding: 20px 0 20px 0;
     height: 225px;
   }
 
@@ -191,6 +191,7 @@ main {
   /*___________________MAIN_____Début_____________ */
 main section {
     padding: 10px 5% 10px 5%;
+
 }
 
   /*___________________MAIN_____fin_____________ */
@@ -239,6 +240,8 @@ footer ul li {
 .fa-solid {
   width: 16px;
   height: 16px;
+  display: inline-flex;
+  justify-content: center;
 }
 .logoSkifWorld {
   display: none;
@@ -246,3 +249,35 @@ footer ul li {
 }
 
    /*___________________FOOTER_____fin_____________ */
+   
+   @media all and (min-width: 768px) {
+    .logoSkifWorld {
+      display: flex;
+    }
+    .menu {
+      display: flex;
+    }
+    .enTete {
+      display: flex;
+      max-width: 90%;
+      width: 1000px;
+      margin: 0 auto 0 auto;
+      justify-content: center;
+    }
+    .skifb {
+      align-self: center;
+      font-size: 60px;
+
+    } 
+
+    
+   }
+
+   @media all and (min-width: 768px) and (max-width: 992px){
+
+   }
+
+
+   @media all and (min-width: 1024px)  {
+   
+   }
